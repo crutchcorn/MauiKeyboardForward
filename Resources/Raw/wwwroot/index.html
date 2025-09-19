@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/HybridWebView.js"></script>
+</head>
+<body>
+<script>
+    document.addEventListener("keydown", e => {
+        if (e.key === "ArrowUp") {
+            window.HybridWebView.InvokeDotNet('UpArrow');
+        }
+        if (e.key === "ArrowDown") {
+            window.HybridWebView.InvokeDotNet('DownArrow');
+        }
+    })
+</script>
+</body>
+</html>
